@@ -15,9 +15,6 @@
     "snowflake.database.name": "<YOUR_DB_NAME>",
     "snowflake.warehouse.name": "<YOUR_DW-NAME>",
     "snowflake.schema.name": "PUBLIC",
-    "behavior.on.null.values": "IGNORE",
-    "transforms": "transform_0",
-    "transforms.transform_0.type": "org.apache.kafka.connect.transforms.Flatten$Value",
-    "transforms.transform_0.delimiter": "."
+    "behavior.on.null.values": "IGNORE"
   }
 }
