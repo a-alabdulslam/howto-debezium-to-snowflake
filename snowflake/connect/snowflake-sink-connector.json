@@ -6,18 +6,15 @@
     "snowflake.ingestion.method": "SNOWPIPE_STREAMING",
     "snowflake.enable.schematization": true,
     "topics": "mysqldb.inventory.users,postgresdb.inventory.product",
-    "snowflake.topic2table.map": "mysqldb.inventory.users:cdc_mysql_inventory_users,postgresdb.inventory.product:cdc_postgresdb_inventory_product",
-    "snowflake.url.name": "https://<YOUR_ACCOUNT>.snowflakecomputing.com",
-    "snowflake.user.name": "poc_confluent",
-    "snowflake.role.name": "SYSADMIN",
-    "snowflake.private.key": "<YOUR_PRIVATE_KEY>",
-    "snowflake.private.key.passphrase": "<YOUR_PRIVATE_KEY_PASSPHRASE>",
-    "snowflake.database.name": "<YOUR_DB_NAME>",
-    "snowflake.warehouse.name": "<YOUR_DW-NAME>",
+    "snowflake.topic2table.map": "mysqldb.inventory.users:cdc_mysql_inventory_users_test2,postgresdb.inventory.product:cdc_postgresdb_inventory_product_test2",
+    "snowflake.url.name": "",
+    "snowflake.user.name": "",
+    "snowflake.role.name": "",
+    "snowflake.private.key": "",
+    "snowflake.private.key.passphrase": "",
+    "snowflake.database.name": "",
+    "snowflake.warehouse.name": "",
     "snowflake.schema.name": "PUBLIC",
-    "behavior.on.null.values": "IGNORE",
-    "transforms": "transform_0",
-    "transforms.transform_0.type": "org.apache.kafka.connect.transforms.Flatten$Value",
-    "transforms.transform_0.delimiter": "."
+    "behavior.on.null.values": "IGNORE"
   }
 }
